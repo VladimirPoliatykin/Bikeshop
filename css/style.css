@@ -1,0 +1,851 @@
+/*Bootstrap*/
+/*спецификация*/
+html,body, ul,li{
+	margin: 0;
+	padding: 0;
+}
+body{
+	overflow-x: hidden;
+	position: relative;
+}
+/*Разделы*/
+header{
+	padding-bottom: 214px;
+}
+
+/*preloader*/
+
+	.preloader{
+		position: fixed;
+		top: 0;
+		left: 0;
+		min-height: 100%;
+		min-width: 100%;
+		z-index: 900;
+		background-color: #000;
+		opacity: 1;
+		visibility: visible;
+		transition: all 1s;
+	}
+	.loader{
+
+		width: 549px;
+		height: 548px;
+		/*position: absolute;*/
+		/*top: calc(50% - 400px);
+		left: calc(50% - 300px);*/
+
+		/*transform: translate(-50%, -50%);*/
+		background-image: url("../files/percent2-1.gif");
+		-webkit-background-size: 100% 100%;
+		-webkit-background-size: contain;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		/*background-attachment: fixed;*/
+		transition: all 1s;
+		-webkit-animation: load 1s  linear;
+	}
+
+	.loader span{
+		width: 100%;
+		font-size: 72px;
+		color: #fff;
+		font-family: 'Niconne', cursive;
+		text-align: center;
+		line-height: 548px;
+		display: inline-block;
+	}
+
+	.loaded{
+		visibility: hidden;
+		opacity: 0;
+	};
+
+	@-webkit-keyframes load{
+		0%{
+			width: 549px;
+			height: 548px;
+		}
+		100%{
+			width: 0px;
+			height: 0px;
+		}
+	}
+
+/*/preloader*/
+
+
+
+
+
+.home{
+	background-image: url(../files/home_bg.png);
+	-webkit-background-size: 100% 100% ;
+	background-size: 100% 100% ;
+	background-repeat: no-repeat;
+	height: 850px;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.home__video{
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*display: none;*/
+	transition: all .5s;
+	opacity: 0;
+}
+.overlay{
+	min-height: 100%;
+	min-width: 100%;
+	background-color: #000;
+	opacity: .5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*display: none;*/
+	transition: all .5s;
+	opacity: 0;
+}
+
+.brand{
+	font-family: 'Niconne', cursive;
+	color: #fff;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 42px;
+}
+
+.header_link{
+	color: #fff;
+	font-size: 24px;
+	text-decoration: none!important;
+	font-family: 'Ubuntu', sans-serif;
+	margin-right: 20px;
+}
+
+.home__shop{
+	color: #fff;
+
+}
+
+.home__title{
+	font-family: 'Old Standard TT', serif;
+	text-align: center;
+
+}
+
+.home__text{
+	color: rgb(194, 193, 193);
+	text-align: center;
+	font-size: 24px;
+	padding: 0 71px;
+	height: 105px;
+	overflow-y: hidden;
+	font-family: 'Old Standard TT', serif;
+}
+
+.home__play{
+	margin-top: 35px;
+	transition: all 1.5s;
+}
+
+.home__play:hover{
+	cursor: pointer;
+}
+
+/*Секция 2*/
+
+.history{
+	position: relative;
+	padding-bottom: 355px;
+	padding-top: 50px;
+}
+
+.history_bg_bike{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -10;
+}
+.history__title{
+	font-size: 60px;
+	font-family: 'Old Standard TT', serif;
+	color: #3c3c3c;
+	/*margin-top: 185px;*/
+}
+
+.history__text{
+	font-size: 21px;
+	color: #6a6a6a;
+	height: 313px;
+	width: 520px;
+	overflow-y: hidden;
+	margin-bottom: 65px;
+
+}
+
+.history__more{
+	/*border: 6px solid #fff;*/
+	border: 1px solid #fff;
+	color: white;
+	font-size: 18px;
+	font-family: 'Ubuntu', sans-serif;
+	background: #3c3c3c;
+	text-decoration: none;
+	padding: 19px 47px;
+	margin-top: 59px;
+	position: relative;
+	z-index: 99;
+
+	
+
+}  
+.history__more::after{
+	content: '';
+	width: calc(100% + 10px);	
+	height: calc(100% + 10px);
+	background-color:  #3c3c3c;
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	z-index: -10 ;
+}
+
+.history__poster{
+	/*position: absolute;*/
+	/*margin-top: 80px;*/
+	top: 0;
+	left: 0;
+}
+
+.history__mr{
+	margin-left: 57px;
+	height: 130px;
+	width: 470px;
+	margin: 0 auto; 
+	/**/
+}
+
+/* */
+
+body{
+	margin-bottom: 50px;
+}
+
+/*Section FEATURES*/
+
+.features{
+	position: relative;
+	padding-bottom: 100px;
+	/**/
+	padding: 50px 0;
+
+}
+
+.features__title{
+	color: #000;
+	font-size: 60px;
+	/*font-size: 60px;*/
+	font-family: 'Old Standard TT', serif;
+	text-align: center;
+}
+
+.features__text{
+	font-size: 19px;
+	width: 910px;
+	height: 85px;
+	text-align: center;
+}
+
+.features__products{
+	position: relative;
+	overflow: hidden;
+	background-image: url(../files/);
+}
+
+.products-controlers, .products-slices{
+	position: absolute;
+	z-index: 90;
+}
+
+.products-controlers{
+	top: 480px;
+	left: 0;
+	width: 60px;
+	height: 180px;
+	z-index: 100;
+}
+
+.products-slices{
+	right: 5px;
+	top: 350px;
+}
+
+.products-slices .list-unstyled li{
+	margin-bottom: 12px;
+}
+
+
+/*Section COMPONENTS*/
+
+.components{
+	margin-bottom: 75px;
+}
+
+.card{
+	transition: all .5s;
+}
+
+.padding-50{
+	padding: 50px 0 100px;
+}
+
+.old-standart{
+	font-family: 'Old Standard TT', serif;
+	font-weight: bold;
+}
+
+/*SECTION SUBSTRIBE*/
+
+.substribe{
+	background-image: url(../files/footer-bg.png);
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	height: 849px;
+
+}
+
+.newsletter{
+	width: 1173px;
+	height: 453px;
+	background-color: #fff;
+	margin: 150px 0;
+	padding: 95px 0;
+	
+}
+
+.substribe-text{
+	
+}
+
+.substribe-form{
+	width: 700px;
+}
+
+input[type = "text"]{
+	width: 490px;
+	/*height: 60px;*/
+	padding: 18px 30px;
+	background-color: #e8e8e8 ;
+	border: none;
+	outline: none;
+}
+
+input[type = "submit"]{
+	height: 60px;
+	width: 200px;
+}
+	
+	
+
+html,body, ul,li{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/*Медиа запросы*/
+
+
+
+
+
+
+
+
+
+
+
+/*// Экстрамалые девайсы («портретные телефоны», < 576px)*/
+@media (max-width: 575.98px) {
+	.loader{
+		width: 150px;
+		height: 150px;
+	}
+	.loader #percent {
+		line-height: 150px;
+		font-size: 26px;
+	}
+	nav{
+		display: block !important;
+		text-align: right;
+	}
+	.links{
+		display: block !important;
+		font-style: normal;
+		/*margin-right: 0;*/
+	}
+	.brand{
+		text-align: left !important;
+		font-size: 28px;
+	}
+	.brand-link{
+		display: inline-block;
+		float: left;
+
+	}
+	.header_link{
+		margin: 0;
+	}
+	.lg-bar{
+		display: none;
+	}
+	.mobile-bar{
+		/*background: rgba(0,0,0,.1) !important;*/
+		color: white;
+		/*margin-bottom: 150px;*/
+		
+	}
+	.navbar-toggler-icon{
+		color: #fff !important;
+    	border-color:  #fff !important;
+	}
+	.nav-color{
+		color: #3c3c3c!important;
+	}
+	.nav-color:hover{
+		color: #000 !important;
+		font-weight: bold !important;
+	}
+	.form-inline{
+		display: block !important;
+	}
+	.home{
+		height: auto;
+		padding: 100px 0;
+	}
+	.home__title{
+		font-size: 28px;
+	}
+	.home__text{
+		padding: 0 20px;
+		font-size: 14px;
+		width: auto;
+		height: 60px;
+	}
+	.home__play{
+		width: 35px;
+	}
+	.play-block{
+		width: auto;
+		margin: 0 auto;
+	}
+	.history{
+		padding-bottom: 250px;
+	}
+	.history__title, .features__title{
+		text-align: center;
+		font-size: 28px;
+	}
+
+	.history__text, .features__text{
+		text-align: justify !important;
+		font-size: 14px;
+		height: auto;
+		width: auto;
+	}
+	.history__more{
+		font-size: 12px;
+	}
+	.history__poster{
+		margin-top: 50px;
+	}
+	.history_bg_bike{
+		width: 70%;
+	}
+	.products-controlers{
+		width: 6%;
+		top: 370px;
+		height: auto;
+
+	}
+	.products-slices{
+		position: static;
+		display: block;	
+		/*height: 120px;*/
+
+	}
+	.products-slices ul{
+		/*float: left;*/
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap
+		/*margin: 0;*/
+	}
+	.card{
+		margin-bottom: 10px;
+	}
+	.card img{
+		width: 50%;
+		margin: 0 auto;
+	}
+	.card-img-top
+	.products-slices ul li{
+		width: 80px;
+	}
+	.products-slices ul li img{
+		width: 100%;
+	}
+	.substribe{
+		height: auto;
+	}
+	.newsletter{
+		width: auto;
+		height: auto;
+		padding: 60px 15px;
+	}
+	.substribe-form{
+		width: auto;
+		padding-top: 20px;
+	}
+	.substribe-form input[type="text"], .substribe-form input[type="submit"]{
+		width: 80%;
+		display: block;
+		margin: 0 auto;
+		font-size: 12px;
+	}
+	.features__text{
+		padding: 0 5px;
+	}
+}
+
+
+
+/*// Малые девайсы («ландшафтные», >= 575px)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.loader{
+		width: 300px;
+		height: 300px;
+	}
+	.loader #percent {
+		line-height: 300px;
+		font-size: 56px;
+	}
+	nav{
+		display: block !important;
+		text-align: right;
+	}
+	.links{
+		display: block !important;
+		font-style: normal;
+		/*margin-right: 0;*/
+	}
+	.brand{
+		text-align: left !important;
+	}
+	.brand-link{
+		display: inline-block;
+		float: left;
+
+	}
+	.header_link{
+		margin: 0;
+	}
+	.lg-bar{
+		display: none;
+	}
+	.mobile-bar{
+		/*background: rgba(0,0,0,.1) !important;*/
+		color: white;
+		/*margin-bottom: 150px;*/
+		
+	}
+	.navbar-toggler-icon{
+		color: #fff !important;
+    	border-color:  #fff !important;
+	}
+	.nav-color{
+		color: #3c3c3c!important;
+	}
+	.nav-color:hover{
+		color: #000 !important;
+		font-weight: bold !important;
+	}
+	.form-inline{
+		display: block !important;
+	}
+	.home{
+		height: 600px;
+		padding-top: 214px;
+	}
+
+	.history__title, .features__title{
+		text-align: center;
+		font-size: 42px;
+	}
+
+	.history__text, .features__text{
+		text-align: justify !important;
+		font-size: 16px;
+		height: auto;
+		width: auto;
+	}
+	.history__more{
+		font-size: 14px;
+	}
+	.history__poster{
+		margin-top: 50px;
+	}
+	.history_bg_bike{
+		width: 70%;
+	}
+	.products-controlers{
+		width: 7%;
+
+	}
+	.products-slices{
+		position: static;
+		display: block;	
+		/*height: 120px;*/
+
+	}
+	.products-slices ul{
+		/*float: left;*/
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		margin-right: 0;
+	}
+
+	.products-slices ul li img{
+		width: 70%;
+	}
+
+	.newsletter{
+		width: auto;
+		height: auto;
+	}
+	.substribe-form{
+		width: auto;
+		padding-top: 20px;
+	}
+	.substribe-form input[type="text"], .substribe-form input[type="submit"]{
+		width: 80%;
+		display: block;
+		margin: 0 auto;
+	}
+	.features__text{
+		padding: 0 50px;
+	}
+
+	.card{
+		margin-bottom: 10px;
+	}
+}
+
+/*// Средние девайсы («таблетки», >= 768px) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+	.loader{
+		width: 300px;
+		height: 300px;
+	}
+	.loader #percent {
+		line-height: 300px;
+		font-size: 56px;
+	}
+	.mobile-bar{
+		display: none;
+	}
+	.header_link{
+		font-size: 16px;
+	}
+	.home{
+		height: 500px;
+	}
+	header{
+		padding-bottom: 95px;
+	}
+	.home__title{
+		font-size: 32px;
+
+	}
+	.home__text{
+		font-size: 12px;
+		height: 55px;
+	}
+	.history{
+		padding-top: 50px;
+		padding-bottom: 0;
+	}
+	.history__title{
+		font-size: 28px;
+		text-align: center;
+		margin: 0;
+	}
+	.history__text{
+		width: auto;
+		font-size: 12px;
+		margin-bottom: 20px;
+	}
+	.history__more{
+		font-size: 12px;
+		padding: 10px 24px;
+	}
+	.history_bg_bike{
+		bottom: -197px;
+	}
+	.history-backgrond{
+		width: 500px;
+	}
+
+	
+	.features{
+		padding-top: 205px;
+		
+	}
+
+	.features__title{
+		font-size: 32px;
+	}
+
+	.products-controlers{
+		width: 35px;
+	}
+
+	.products-slices .list-unstyled li{
+		width: 125px;
+		border-bottom: 3px solid #3c3c3c
+	}
+	
+	.component{
+		padding-bottom: 50px;
+	}
+	.padding-50{
+		padding: 50px 0 50px;
+	}
+	.substribe{
+		height: auto;
+	}
+	.newsletter{
+		width: auto;
+		height: auto;
+	}
+	.substribe-text{
+		padding: 0 50px;
+	}
+	.substribe-form{
+		padding: 0 50px;
+		background-color: #fff;
+		width: auto;
+	}
+	input[type = "text"]{
+		background-color: #fff;
+		border: 1px solid black;
+		width: 390px;
+		padding: 17px 30px;
+	}
+	input[type = "submit"]{
+		border-radius: 0;
+	}}
+	.card{
+		margin-bottom: 10px;
+	}
+	.card:hover{
+		position: relative;
+		z-index: 90;
+		transform: scale(1.1);
+		box-shadow: 1px 1px 13px 1px #000;
+		margin-bottom: 10px;
+	}
+
+/*// Большие девайсы (большие десктопы, >= 992px)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.loader{
+		width: 300px;
+		height: 300px;
+	}
+	.loader #percent {
+		line-height: 300px;
+		font-size: 56px;
+	}
+	.mobile-bar{
+		display: none;
+	}
+	.newsletter, .history__text{
+		width: auto;
+	}
+	.features__text{
+		padding: 0 50px;
+	}
+	.history_bg_bike{
+		width: 720px;
+	}
+	.products-controlers{
+		width: 45px;
+	}
+	.card{
+		margin-bottom: 10px;
+	}
+	.card:hover{
+		transform: scale(1.1);
+		box-shadow: 1px 1px 13px 1px #000;
+	}
+}
+
+/*// Большие девайсы (большие десктопы, >= 1200px)*/
+@media (min-width: 1200px) {
+	.mobile-bar{
+		display: none;
+	}
+	.card{
+		margin-bottom: 10px;
+	}
+	.card:hover{
+		position: relative;
+		z-index: 90;
+		transform: scale(1.1);
+		box-shadow: 1px 1px 13px 1px #000;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*LOUPE*/
+
+
+/*</LOUPE>*/
